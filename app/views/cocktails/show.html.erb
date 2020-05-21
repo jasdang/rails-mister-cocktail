@@ -1,4 +1,6 @@
 <h3><%= @cocktail.name %></h3>
 <% @cocktail.doses.each do |dose| %>
-  <p><%= "#{dose.ingredient} - #{dose.description}" %></p>
+  <p><%= "#{dose.ingredient.name} - #{dose.description}" %></p>
 <% end %>
+
+<%= link_to 'Back', cocktails_path %>
