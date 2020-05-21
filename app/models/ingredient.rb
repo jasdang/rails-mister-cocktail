@@ -2,9 +2,10 @@ class Ingredient < ApplicationRecord
   # validation
   validates :name, presence: true, uniqueness: true
 
+  # check in is in use before destroying
   before_destroy :in_use?
 
-  #relationship
+  # relationship
   has_many :doses
   has_many :cocktails, through: :doses
 
