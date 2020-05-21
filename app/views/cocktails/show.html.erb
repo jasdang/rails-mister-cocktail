@@ -3,4 +3,5 @@
   <p><%= "#{dose.ingredient.name} - #{dose.description}" %></p>
 <% end %>
 
-<%= link_to 'Back', cocktails_path %>
+<p><%= link_to 'Add an ingrdient', new_cocktail_dose_path(@cocktail) %></p>
+<p><%= link_to 'Back', cocktails_path %></p>
