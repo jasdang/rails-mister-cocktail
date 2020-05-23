@@ -13,12 +13,17 @@
 @import "pages/index";
 
 // CSS style
+.cocktail-body {
+  width: 80vw;
+  margin: 40px auto;
+}
+
+.cocktail-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .cocktail-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
-
-#cocktail-kit {
- margin-bottom: 0;
- margin-left: 12px;
 }

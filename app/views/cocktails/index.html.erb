@@ -1,4 +1,4 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top translucent">
   <%= link_to "", class: "navbar-brand d-flex align-items-center justify-content-between" do %>
     <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
     <h4 id='cocktail-kit'> COCKTAIL KIT </h4>
@@ -7,7 +7,7 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <%= link_to 'Create new cocktail', new_cocktail_path, class: 'navbar-lewagon navbar-collapse' %>
+        <%= link_to 'Create new cocktail', new_cocktail_path, class: 'navbar-lewagon navbar-collapse btn btn-primary' %>
       </li>
     </ul>
   </div>
@@ -17,13 +17,19 @@
   <h1> Welcome to Mr. Cocktail!</h1>
 </div>
 
-<div class='cocktail-container'>
-  <% @cocktails.each do |cocktail| %>
-  <div class="card" style="width: 30rem;">
-    <%= image_tag "cocktails.jpg", class: 'card-img-top' %>
-    <div class="card-body">
-      <%=link_to cocktail.name, cocktail_path(cocktail), class: 'card-text' %>
-    </div>
+<div class="cocktail-body">
+  <div class="cocktail-header">
+    <h3>Cocktail Listing</h3>
   </div>
-  <% end %>
+
+  <div class='cocktail-container'>
+    <% @cocktails.each do |cocktail| %>
+    <div class="card" style="width: 30rem;">
+      <%= image_tag "cocktails.jpg", class: 'card-img-top' %>
+      <div class="card-body">
+        <%=link_to cocktail.name, cocktail_path(cocktail), class: 'card-text' %>
+      </div>
+    </div>
+    <% end %>
+  </div>
 </div>
