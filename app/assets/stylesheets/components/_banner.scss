@@ -6,3 +6,12 @@
   text-align: center;
   padding-top: 40vh;
 }
+
+.cocktail-banner {
+  background-image: linear-gradient(rgba(0, 0, 0,0.5), rgba(0,0,0,0.5)), asset-url('cocktails.jpg');
+  background-size: cover;
+  height: 20vh;
+  color: white;
+  text-align: center;
+  padding-top: 5vh;
+}
