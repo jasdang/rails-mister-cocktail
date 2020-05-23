@@ -1,19 +1,20 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-  <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
+  <%= link_to "", class: "navbar-brand d-flex align-items-center justify-content-between" do %>
+    <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
+    <h4 id='cocktail-kit'> COCKTAIL KIT </h4>
   <% end %>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <%= link_to 'Create new cocktail', new_cocktail_path, class: 'navbar-lewagon navbar-collapse' %>
       </li>
     </ul>
   </div>
 </div>
 
-<div class='banner'>
-  <h1> All cocktails</h1>
+<div class='home-banner text-center'>
+  <h1> Welcome to Mr. Cocktail!</h1>
 </div>
 
 <div class='cocktail-container'>
