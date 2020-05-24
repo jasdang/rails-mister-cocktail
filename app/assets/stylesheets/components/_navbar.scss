@@ -3,6 +3,12 @@
   background-color: translucent;
 }
 
+#navbarSupportedContent {
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+
 .navbar-lewagon .navbar-collapse {
   flex-grow: 0;
 }
@@ -13,4 +19,8 @@
 
 .navbar-lewagon.navbar-color {
   background-color: white;
+}
+
+#navbarSupportedContent > ul:nth-child(1) > li > a {
+  flex-grow: 1;
 }
