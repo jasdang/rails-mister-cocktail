@@ -13,6 +13,11 @@
 @import "pages/index";
 
 // CSS style
+.body {
+  width: 100vh;
+}
+
+// cocktails
 .cocktail-body {
   width: 80vw;
   margin: 40px auto;
@@ -25,5 +30,31 @@
 
 .cocktail-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+  width: 80vw;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+// cocktail responsive
+@media (max-width: 1200px) {
+  .cocktail-container {
+    grid-template-columns: auto auto auto ;
+  }
+  // .card-big {
+  //   width: 30rem;
+  // }
+}
+
+@media (max-width: 960px) {
+  .cocktail-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .cocktail-container {
+    grid-template-columns: auto;
+  }
 }
