@@ -18,4 +18,7 @@ require("channels")
 
 import 'bootstrap';
 
-initUpdateNavbarOnScroll();
+document.addEventListener('turbolinks:load', () => {
+  // Call your JS functions here
+  initUpdateNavbarOnScroll();
+});
