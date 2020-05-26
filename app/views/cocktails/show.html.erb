@@ -1,5 +1,6 @@
 <div class="cocktail-banner">
   <h3><%= @cocktail.name %></h3>
+  <!-- <p><%= link_to 'Delete this cocktail', cocktail_path(@cocktail), method: :delete, data: { confirm: "Are you sure?"} %></p> -->
   <% if @cocktail.photo.attached? %>
     <%= cl_image_tag @cocktail.photo.key, height:300, width:400, crop: :fill %>
   <% end %>
@@ -29,9 +30,6 @@
   <div class="row justify-content-center">
     <div class="col-md-6">
       <p><%= link_to 'Back', cocktails_path %></p>
-    </div>
-    <div class="col-md-6">
-      <p><%= link_to 'Delete', cocktail_path(@cocktail), method: :delete, data: { confirm: "Are you sure?"} %></p>
     </div>
   </div>
 </div>
