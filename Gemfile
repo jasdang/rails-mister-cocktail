@@ -31,6 +31,9 @@ gem 'bootsnap', '>= 1.4.2', require: false
 # dotenv
 gem 'dotenv-rails', groups: [:development, :test]
 
+# Cloudinary
+gem 'cloudinary', '~> 1.12.0'
+
 #Front end
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass', '~> 5.12.0'
