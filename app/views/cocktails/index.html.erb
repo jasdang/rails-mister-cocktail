@@ -2,18 +2,16 @@
   <h1> Welcome to Mr. Cocktail!</h1>
 </div>
 
-<div class="cocktail-body">
-  <div class="cocktail-header">
+<div class="cocktail-container">
+  <div class="header">
     <h3>Cocktail Listing</h3>
   </div>
 
-  <div class='cocktail-container'>
+  <div class='grid'>
     <% @cocktails.each do |cocktail| %>
-    <div class="card card-size">
-      <%= image_tag "cocktails.jpg", class: 'card-img-top' %>
-      <div class="card-body">
-        <%=link_to cocktail.name, cocktail_path(cocktail), class: 'card-text' %>
-      </div>
+    <div class="cocktail-card" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<%= cl_image_path cocktail.photo.key, height: 300, width: 400, crop: :fill %>')">
+      <%=link_to cocktail.name, cocktail_path(cocktail), class: "card-content"%>
+<!--         <%=link_to "Delete", cocktail_path(cocktail), method: :delete %> -->
     </div>
     <% end %>
   </div>
