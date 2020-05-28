@@ -14,3 +14,12 @@
   font-size: 2em;
   text-align: center;
 }
+
+// cocktail responsive
+
+@media (max-width: 720px) {
+  .cocktail-card {
+    width: 16rem;
+    height: 12rem;
+  }
+}

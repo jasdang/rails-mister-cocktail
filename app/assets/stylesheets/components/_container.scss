@@ -12,7 +12,7 @@
 .cocktail-container .grid {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 10px;
+  grid-gap: 20px;
   width: 80vw;
   margin: 0 auto;
   justify-items: center;
@@ -20,19 +20,24 @@
 
 // cocktail responsive
 @media (max-width: 1200px) {
-  .cocktail-container {
+  .cocktail-container .grid {
     grid-template-columns: auto auto auto ;
   }
 }
 
 @media (max-width: 960px) {
-  .cocktail-container {
+  .cocktail-container .grid  {
     grid-template-columns: auto auto;
   }
 }
 
 @media (max-width: 720px) {
-  .cocktail-container {
+  .cocktail-container .grid  {
     grid-template-columns: auto;
   }
+}
+
+// ingredients
+.ingredient-container {
+  width: 7
 }
